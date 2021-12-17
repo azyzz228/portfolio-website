@@ -32,7 +32,7 @@ function ContactMe() {
 
     };
     return (
-        <section class="w-full h-full bg-[#fceaff] md:px-12 py-8" id="contact">
+        <section class="w-full h-full bg-gray-100 md:px-12 py-8" id="contact">
 
             <Wrapper>
                 <div className="flex flex-col justify-center items-start md:flex-row md:px-16 py-12   ">
@@ -64,18 +64,18 @@ function ContactMe() {
                         <div className=" bg-white md:rounded-3xl py-4  px-8 w-[380px]">
                             <form ref={form} onSubmit={sendEmail}>
                                 <p className='tracking-tighter mb-1'>Your name</p>
-                                <div className="flex flex-row w-full rounded-xl mb-4 px-4 
+                                <div className="flex flex-row w-full bg-gray-50 rounded-xl mb-4 px-4 
                              py-2 items-center space-x-4  ring-1 ring-offset-0 ring-gray-400 focus-within:ring-blue-on-purple focus-within:text-blue-on-purple ">
                                     <ClipboardListIcon className=' w-6 h-6   ' />
-                                    <input type="text" name="name" id="" className='outline-none border-b border-gray-300 w-full bg-transparent text-gray-900' placeholder='Enter your name' required />
+                                    <input type="text" name="name" id="" className='outline-none w-full bg-transparent text-gray-900' placeholder='Enter your name' required />
                                 </div>
 
 
                                 <p className='tracking-tighter mb-1'>Mail</p>
-                                <div className="flex flex-row w-full rounded-xl mb-4 px-4 
+                                <div className="flex flex-row w-full bg-gray-50 rounded-xl mb-4 px-4 
                              py-2 items-center space-x-4  ring-1 ring-offset-1 ring-gray-400 focus-within:ring-blue-on-purple focus-within:text-blue-on-purple">
                                     <MailIcon className=' w-6 h-6   ' />
-                                    <input type="email" name="email" id="" className='outline-none border-b border-gray-300 w-full bg-transparent text-black' placeholder='johndoe@mail.com' required />
+                                    <input type="email" name="email" id="" className='outline-none w-full bg-transparent text-black' placeholder='Enter your email' required />
                                 </div>
 
                                 <p className='tracking-tighter mb-1'>Message</p>
