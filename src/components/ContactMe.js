@@ -67,7 +67,7 @@ function ContactMe() {
                                 <div className="flex flex-row w-full rounded-xl mb-4 px-4 
                              py-2 items-center space-x-4  ring-1 ring-offset-0 ring-gray-400 focus-within:ring-blue-on-purple focus-within:text-blue-on-purple ">
                                     <ClipboardListIcon className=' w-6 h-6   ' />
-                                    <input type="text" name="name" id="" className='outline-none border-b border-gray-300 w-full bg-transparent text-gray-900' placeholder='Enter your name' />
+                                    <input type="text" name="name" id="" className='outline-none border-b border-gray-300 w-full bg-transparent text-gray-900' placeholder='Enter your name' required />
                                 </div>
 
 
@@ -75,11 +75,11 @@ function ContactMe() {
                                 <div className="flex flex-row w-full rounded-xl mb-4 px-4 
                              py-2 items-center space-x-4  ring-1 ring-offset-1 ring-gray-400 focus-within:ring-blue-on-purple focus-within:text-blue-on-purple">
                                     <MailIcon className=' w-6 h-6   ' />
-                                    <input type="email" name="email" id="" className='outline-none border-b border-gray-300 w-full bg-transparent text-black' placeholder='johndoe@mail.com' />
+                                    <input type="email" name="email" id="" className='outline-none border-b border-gray-300 w-full bg-transparent text-black' placeholder='johndoe@mail.com' required />
                                 </div>
 
                                 <p className='tracking-tighter mb-1'>Message</p>
-                                <textarea name="message" id="" rows="4" className='w-full mb-6 outline-none ring-1 ring-offset-1 ring-gray-400 focus-within:ring-blue-on-purple rounded-xl p-4 bg-gray-50' placeholder='Message'></textarea>
+                                <textarea name="message" id="" rows="4" className='w-full mb-6 outline-none ring-1 ring-offset-1 ring-gray-400 focus-within:ring-blue-on-purple rounded-xl p-4 bg-gray-50' placeholder='Message' required></textarea>
 
                                 <div className=" w-full mt-2 flex flex-col items-center justify-center">
                                     <RingLoader color={"#0085ff"} loading={loading} size={60} />
