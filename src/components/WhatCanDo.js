@@ -50,8 +50,8 @@ function WhatCanDo() {
                 <div className="flex flex-col items-center md:items-start">
                     <p>Turning Ideas </p>
 
-                    <div className="text-transparent bg-clip-text bg-gradient-to-tr from-blue-300 to-pink-300">
-                        <p className="">into products <span className="text-black">is</span></p>
+                    <div className="bg-clip-text text-transparent bg-gradient-to-tr from-blue-300 to-pink-300">
+                        <span className="">into products </span><span className="text-black">is</span>
                     </div>
                     <div className=" flex flex-row justify-start items-center">
                         <p>My expertise</p>

@@ -28,7 +28,7 @@ function Hero() {
     return (
         <GrayBg>
             <ScrollLink to="contact" smooth={true} duration={1000} className='tracking-wider underline cursor-pointer'>
-                <MailIcon className="fixed bottom-12 right-10 md:bottom-12 md:right-28 z-50 w-12 h-12 p-3 rounded-full text-sky-500 bg-white ring-2 ring-offset-sky-400  "></MailIcon>
+                <MailIcon className="fixed bottom-12 right-10 md:bottom-12 md:right-28 z-50 w-12 h-12 p-3 rounded-full text-sky-500 bg-white border border-sky-400  "></MailIcon>
             </ScrollLink>
 
 
