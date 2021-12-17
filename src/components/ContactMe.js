@@ -5,6 +5,7 @@ import tw from 'tailwind-styled-components'
 import { PhoneIcon, MailIcon as MailSolidIcon } from '@heroicons/react/solid'
 import { ClipboardListIcon, MailIcon } from '@heroicons/react/outline'
 import { RingLoader } from 'react-spinners'
+import ReactGA from 'react-ga';
 
 
 const Wrapper = tw.div` bg-purple-800 rounded-2xl `;
@@ -16,9 +17,13 @@ function ContactMe() {
     const [loading, setLoading] = useState(false)
     const form = useRef();
 
+
+
     const sendEmail = (e) => {
 
         e.preventDefault();
+
+
         setLoading(true)
         setClicked(true)
         emailjs.sendForm('service_m2ob3k8', 'template_w61xw48', form.current, "user_0Mnkc44zS931z4MgLbLeO")
@@ -26,6 +31,11 @@ function ContactMe() {
                 setLoading(false)
                 setIsSent(true)
                 e.target.reset();
+                ReactGA.event({
+                    category: 'Actions',
+                    action: 'Submitted a form',
+                    value: 1
+                })
             }, (error) => {
                 console.log(error.text);
             });
