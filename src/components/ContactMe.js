@@ -16,10 +16,15 @@ function ContactMe() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        console.log(form);
 
-        setIsSet(true)
-        e.target.reset();
+        emailjs.sendForm('service_m2ob3k8', 'template_w61xw48', form.current, "user_0Mnkc44zS931z4MgLbLeO")
+            .then((result) => {
+                setIsSet(true)
+                e.target.reset();
+            }, (error) => {
+                console.log(error.text);
+            });
+
     };
     return (
         <section class="w-full h-full bg-[#fceaff] md:px-12 py-8" id="contact">
@@ -65,14 +70,14 @@ function ContactMe() {
                                 <div className="flex flex-row w-full rounded-xl mb-4 px-4 
                              py-2 items-center space-x-4  ring-1 ring-offset-1 ring-gray-400 focus-within:ring-blue-on-purple focus-within:text-blue-on-purple">
                                     <MailIcon className=' w-6 h-6   ' />
-                                    <input type="email" name="email" id="" className='outline-none border-b border-gray-300 w-full bg-transparent' placeholder='johndoe@mail.com' />
+                                    <input type="email" name="email" id="" className='outline-none border-b border-gray-300 w-full bg-transparent text-black' placeholder='johndoe@mail.com' />
                                 </div>
 
                                 <p className='tracking-tighter mb-1'>Message</p>
                                 <textarea name="message" id="" rows="4" className='w-full mb-6 outline-none ring-1 ring-offset-1 ring-gray-400 focus-within:ring-blue-on-purple rounded-xl p-4 bg-gray-50' placeholder='Message'></textarea>
 
                                 {isSent ?
-                                    <p className={`w-full py-2 text-white text-base grid place-items-center bg-[#00b897]`}
+                                    <p className={`w-full py-2 text-white text-lg grid place-items-center bg-[#00b897]`}
                                     >Thanks! I will get back very soon!</p>
                                     :
                                     <button type="submit" className='w-full grid place-content-center rounded-xl py-2 text-white tracking-wide text-lg bg-blue-on-purple transform ease-in-out duration-200 font-medium hover:opacity-80'
