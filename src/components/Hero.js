@@ -7,7 +7,7 @@ import lamp from '../images/lamp.png'
 import pointdown from '../images/pointdown.png'
 import { Link as ScrollLink } from 'react-scroll'
 import Parallax from 'react-rellax'
-import { ChatAltIcon, MailIcon } from '@heroicons/react/solid'
+import { MailIcon } from '@heroicons/react/solid'
 
 const NavWrapper = tw.div`flex md:text-sm lg:text-base flex-row justify-between items-center w-full px-10 py-4`;
 const GrayBg = tw.div`

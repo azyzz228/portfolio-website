@@ -4,22 +4,27 @@ import emailjs from 'emailjs-com';
 import tw from 'tailwind-styled-components'
 import { PhoneIcon, MailIcon as MailSolidIcon } from '@heroicons/react/solid'
 import { ClipboardListIcon, MailIcon } from '@heroicons/react/outline'
+import { RingLoader } from 'react-spinners'
 
 
 const Wrapper = tw.div` bg-purple-800 rounded-2xl `;
 
 function ContactMe() {
 
-    const [isSent, setIsSet] = useState(false)
+    const [isSent, setIsSent] = useState(false)
+    const [clicked, setClicked] = useState(false)
+    const [loading, setLoading] = useState(false)
     const form = useRef();
 
     const sendEmail = (e) => {
+
         e.preventDefault();
-
-
+        setLoading(true)
+        setClicked(true)
         emailjs.sendForm('service_m2ob3k8', 'template_w61xw48', form.current, "user_0Mnkc44zS931z4MgLbLeO")
             .then((result) => {
-                setIsSet(true)
+                setLoading(false)
+                setIsSent(true)
                 e.target.reset();
             }, (error) => {
                 console.log(error.text);
@@ -76,12 +81,19 @@ function ContactMe() {
                                 <p className='tracking-tighter mb-1'>Message</p>
                                 <textarea name="message" id="" rows="4" className='w-full mb-6 outline-none ring-1 ring-offset-1 ring-gray-400 focus-within:ring-blue-on-purple rounded-xl p-4 bg-gray-50' placeholder='Message'></textarea>
 
-                                {isSent ?
+                                <div className=" w-full mt-2 flex flex-col items-center justify-center">
+                                    <RingLoader color={"#0085ff"} loading={loading} size={60} />
+                                </div>
+
+                                {!clicked && <button type="submit" className='w-full grid place-content-center rounded-xl py-2 text-white tracking-wide text-lg bg-blue-on-purple transform ease-in-out duration-200 font-medium hover:opacity-80'
+                                > Submit</button>}
+
+                                {
+                                    isSent &&
                                     <p className={`w-full py-2 text-white text-lg grid place-items-center bg-[#00b897]`}
                                     >Thanks! I will get back very soon!</p>
-                                    :
-                                    <button type="submit" className='w-full grid place-content-center rounded-xl py-2 text-white tracking-wide text-lg bg-blue-on-purple transform ease-in-out duration-200 font-medium hover:opacity-80'
-                                    > Submit</button>
+
+
                                 }
 
                             </form>
