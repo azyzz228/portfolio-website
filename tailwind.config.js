@@ -5,7 +5,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        plex: "'IBM Plex Sans', sans-serif;"
+        plex: "'IBM Plex Sans', sans-serif;",
+        mulish: "'Mulish', sans-serif;",
+        poppins: "'Poppins', sans-serif;",
+        opensans: "'Open Sans', sans-serif;"
       },
       colors: {
         'blue-on-purple': '#0085ff'
