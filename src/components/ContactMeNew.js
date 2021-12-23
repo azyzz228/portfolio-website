@@ -34,7 +34,7 @@ function ContactMeNew() {
         <div className='font-mulish relative'>
 
             <div className="flex flex-col md:flex-row items-center justify-center bg-sky-700 space-x-0 md:space-x-40">
-                <div className=" w-full text-center px-16 py-20 md:text-left md:w-[260px]">
+                <div className=" w-full text-center px-16 py-20 md:p-0 md:text-left md:w-[260px]">
                     <h1 className='text-5xl text-white font-semibold font-opensans'>Let's talk.</h1>
                     <p className='text-lg text-sky-300 mt-4 '>Interested in working together? Fill up the form and we can dicuss your project.</p>
                 </div>
