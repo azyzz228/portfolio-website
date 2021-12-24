@@ -10,7 +10,7 @@ const HackathonSide = tw(HackathonSideCustomCss)`bg-sky-800 w-full md:max-w-sm p
 
 function HackathonSection() {
     return (
-        <div className=' flex flex-col md:flex-row font-mulish'>
+        <div className=' flex flex-col md:flex-row font-mulish' id="hackathons">
 
             <HackathonSide >
                 <h1 className='text-2xl text-white font-bold'>Hackathons</h1>

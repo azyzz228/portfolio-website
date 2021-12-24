@@ -3,6 +3,7 @@ import tw from "tailwind-styled-components"
 import profilephoto from '../images/profilephoto.png'
 import { Link as ScrollLink } from 'react-scroll'
 import { MailIcon } from '@heroicons/react/solid'
+import CircleSvg from './CircleSvg'
 
 const NavWrapper = tw.div`hidden lg:flex justify-end md:text-sm lg:text-base px-10 pt-8 pb-24 font-mulish text-slate-500`;
 const GrayBg = tw.div`
@@ -29,16 +30,17 @@ function HeroNew() {
 
 
             <Container>
+                <div className=" hidden sm:block absolute left-2 top-2">
+                    <CircleSvg />
+                </div>
 
                 <NavWrapper>
 
                     <div className="hidden lg:flex flex-row items-center space-x-2 md:space-x-5 xl:space-x-12">
 
-                        <ScrollLink to="skills" smooth={true} duration={1000} className="cursor-pointer hover:text-slate-900">Skills</ScrollLink>
-
                         <ScrollLink to="hackathons" smooth={true} duration={1000} className="cursor-pointer hover:text-slate-900">Hackathons</ScrollLink>
 
-                        <ScrollLink to="services" smooth={true} duration={1000} className="cursor-pointer hover:text-slate-900">What do I do</ScrollLink>
+
                         <ScrollLink to="projects" smooth={true} duration={1000} className="cursor-pointer hover:text-slate-900">Projects</ScrollLink>
                     </div>
                 </NavWrapper>

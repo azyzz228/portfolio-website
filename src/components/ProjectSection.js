@@ -6,7 +6,7 @@ import { ChevronRightIcon } from '@heroicons/react/outline'
 
 function ProjectSection() {
     return (
-        <div className="bg-slate-50">
+        <div className="bg-slate-50" id='projects'>
             <div className=' px-4 md:px-16 lg:px-24 py-12 font-mulish '>
                 <p className='text-2xl text-slate-900 text-center my-8 sm:my-12'>Portfolio</p>
 

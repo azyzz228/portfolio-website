@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import DotsSvg from './DotsSvg'
 
 function FooterNew() {
@@ -40,10 +41,14 @@ function FooterNew() {
 
                     </a>
                 </div>
-                <div class="text-center text-sky-100 text-lg  pt-10 sm:pt-12 font-light flex items-center justify-center flex-wrap">
-                    <p className='mr-1'>Designed and developed by</p>
-                    <span className='font-bold'> Aziz Abdullaev</span>
+                <div class="text-center text-sky-100 text-lg  pt-10 sm:pt-12 font-light flex flex-col items-center justify-center flex-wrap">
+                    <p className='mr-1'>Designed and developed by <span className='font-bold'> Aziz Abdullaev</span></p>
+
+                    <Link to="/old">
+                        <p className='text-sky-300 underline my-6 cursor-pointer'>See old version</p>
+                    </Link>
                 </div>
+
             </div>
         </footer>
     )

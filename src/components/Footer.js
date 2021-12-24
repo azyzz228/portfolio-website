@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 function Footer() {
     return (
 
@@ -35,8 +36,13 @@ function Footer() {
 
                     </a>
                 </div>
-                <div class="text-center text-gray-500 dark:text-gray-200 pt-10 sm:pt-12 font-light flex items-center justify-center">
-                    Designed and developed by Aziz
+                <div class="text-center text-gray-500 dark:text-gray-200 pt-10 sm:pt-12 font-light flex flex-col items-center justify-center">
+                    <p> Designed and developed by Aziz</p>
+
+                    <Link to="/">
+                        <p className='my-6 underline'>Go back to the newest version</p>
+                    </Link>
+
                 </div>
             </div>
         </footer>
