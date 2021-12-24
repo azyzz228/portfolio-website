@@ -14,7 +14,7 @@ function HackathonSection() {
 
             <HackathonSide >
                 <h1 className='text-2xl text-white font-bold'>Hackathons</h1>
-                <p className=' text-lg text-sky-200 mt-4'>During 24 or 36 hours, my team and I have built working applications that address real world problems.</p>
+                <p className=' text-lg text-sky-200 mt-4'>They are software development competitions. My team and I have created several applications that address real-world problems. I was responsible for the frontend part and have actively participated in idea formation.</p>
             </HackathonSide>
 
             <div className=" bg-sky-600 ">

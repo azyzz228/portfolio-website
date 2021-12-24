@@ -31,7 +31,7 @@ function ContactMeNew() {
 
     };
     return (
-        <div className='font-mulish relative'>
+        <div className='font-mulish relative' >
 
             <div className="flex flex-col md:flex-row items-center justify-center bg-sky-700 space-x-0 md:space-x-40">
                 <div className=" w-full text-center px-16 py-20 md:p-0 md:text-left md:w-[260px]">
@@ -40,7 +40,7 @@ function ContactMeNew() {
                 </div>
 
 
-                <div className=" bg-white rounded-3xl py-10 -mb-4 md:-my-24 z-40 px-8  sm:px-12 sm:w-[384px] h-[505px]">
+                <div className=" bg-white rounded-3xl py-10 -mb-4 md:-my-24 z-40 px-8  sm:px-12 sm:w-[384px] h-[505px]" id='contact'>
                     <form ref={form} onSubmit={sendEmail} className={` transform duration-75 ${clicked ? "hidden" : "block"}`}>
                         <p className=' mb-1 text-slate-700'>Name</p>
                         <div className="form--field--div mb-5 ">

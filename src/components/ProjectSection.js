@@ -18,8 +18,13 @@ function ProjectSection() {
 
 
                         <div className="flex flex-row items-center space-x-12 mt-10 lg:mt-16  ">
-                            <button className='  text-slate-900 border-b-2 hover:border-sky-500  '>See the demo</button>
-                            <button className=' text-slate-600 hover:text-slate-900 '>Source code</button>
+                            <a href="http://email1for1bsh.pythonanywhere.com/" target="_blank" rel='noreferrer'>
+                                <p className='  text-slate-900 border-b-2 hover:border-sky-500  '>See the demo</p>
+                            </a>
+
+                            <a href="https://github.com/azyzz228/nevskiy3" target="_blank" rel='noreferrer'>
+                                <p className=' text-slate-600 hover:text-slate-900 '>Source code</p>
+                            </a>
                         </div>
                     </div>
 
@@ -38,16 +43,23 @@ function ProjectSection() {
                     <div className=" flex flex-col max-w-sm py-16 lg:py-24  flex-shrink
                     pl-6 pr-6 sm:pr-10 sm:pl-0 lg:pr-16
                     ">
-                        <h1 className='text-2xl lg:text-3xl font-bold text-slate-500 mb-8 lg:mb-12'>Nevskiy project</h1>
-                        <p className='text-base lg:text-lg text-slate-900'>I have built a website for construction company with parking and apartment availability management from admin panel. The website is built using Django. <span className='italic'>Not mobile responsive</span> </p>
+                        <h1 className='text-2xl lg:text-3xl font-bold text-slate-500 mb-8 lg:mb-12'>Bookmark website</h1>
+                        <p className='text-base lg:text-lg text-slate-900'>I have developed fully responsive landing page website from existing design using TailwindCSS.</p>
 
                         <div className="flex flex-col space-y-12">
                             <div className="flex flex-row items-center space-x-12 mt-8 md:mt-16  ">
-                                <button className='  text-slate-900 border-b-2 hover:border-sky-500  '>See the demo</button>
-                                <button className=' text-slate-600 hover:text-slate-900 '>Source code</button>
+                                <a href="https://tailwindsite.pythonanywhere.com/" target="_blank" rel='noreferrer'>
+                                    <p className='  text-slate-900 border-b-2 hover:border-sky-500  '>See the demo</p>
+                                </a>
+
+
+                                <a href="https://github.com/azyzz228/tailwindsite" target="_blank" rel='noreferrer'>
+                                    <p className=' text-slate-600 hover:text-slate-900 '>Source code</p>
+
+                                </a>
                             </div>
 
-                            <a href="#" className='flex flex-row items-center justify-center space-x-1 text-slate-600 hover:text-slate-900'>
+                            <a href="https://github.com/azyzz228" target="_blank" rel='noreferrer' className='flex flex-row items-center justify-center space-x-1 text-slate-600 hover:text-slate-900'>
                                 <span className=''>See more</span>
                                 <ChevronRightIcon className='w-5 h-5 -mb-1' />
                             </a>
