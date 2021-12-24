@@ -5,7 +5,7 @@ import { hackathons } from "./data"
 function HackathonCard() {
 
     return (
-        <div className=" flex flex-row  items-center md:items-baseline justify-start flex-wrap gap-16 px-6 mt-24 sm:mt-0 sm:p-16 font-mulish">
+        <div className=" flex flex-row  items-center md:items-baseline justify-start flex-wrap gap-16 px-6 py-16 sm:mt-0 sm:p-16 font-mulish">
 
 
             {hackathons.map((item, key) => (
